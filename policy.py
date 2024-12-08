@@ -81,7 +81,7 @@ class GreedyPolicy(Policy):
         stock_idx = -1
         pos_x, pos_y = 0, 0
 
-        # Pick a product that has quality > 0
+        # Pick a product that has quantity > 0
         for prod in list_prods:
             if prod["quantity"] > 0:
                 prod_size = prod["size"]
